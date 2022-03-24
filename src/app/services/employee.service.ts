@@ -8,20 +8,20 @@ employees : Employee[] = [
   {
     id:1,
     name: "John",
-    phone: 111,
-    email: 'sdasd@asdasd.com'
+    phone: 123456789,
+    email: 'qwert@email.com'
   },
   {
     id:2,
     name: "Rick",
-    phone: 2222,
-    email: 'sdasd@asdasd.com'
+    phone: 123456789,
+    email: 'qwert@email.com'
   },
   {
     id:3,
     name: "Bob",
-    phone: 333,
-    email: 'sdasd@asdasd.com'
+    phone: 123456789,
+    email: 'qwert@email.com'
   }
 ]
   constructor() { }
@@ -48,7 +48,6 @@ employees : Employee[] = [
     let oldEmployee = this.employees.find(x => x.id === employee.id);
     oldEmployee!.name = employee.name;
     oldEmployee!.email = employee.email;
-    oldEmployee!.phone = employee.phone;
-    
+    oldEmployee!.phone = employee.phone;  
   }
 }

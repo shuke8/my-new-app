@@ -18,7 +18,13 @@
         <td>{{ employee.name }}</td>
         <td>{{ employee.email }}</td>
         <td>{{ employee.phone }}</td>
-        <td><a [routerLink]="['employee/edit', employee.id]">Edit</a></td>
+        <td>
+          <a
+            class="btn btn-outline-secondary btn-sm"
+            [routerLink]="['employee/edit', employee.id]"
+            >Edit</a
+          >
+        </td>
         <td>
           <button (click)="onDelete(employee.id)" class="btn border">x</button>
         </td>

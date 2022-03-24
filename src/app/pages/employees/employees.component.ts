@@ -11,7 +11,6 @@ import { EmployeeService } from 'src/app/services/employee.service';
 export class EmployeesComponent implements OnInit {
 
   list: Employee[];
-  
   constructor(private employeeService: EmployeeService) { 
     this.list = employeeService.employees;
   }
@@ -20,7 +19,6 @@ export class EmployeesComponent implements OnInit {
   }
 
   onDelete(id : Number) {
-
     this.employeeService.onDelete(id)
   }
 }
